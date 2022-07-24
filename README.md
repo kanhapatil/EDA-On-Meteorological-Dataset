@@ -7,3 +7,8 @@
 
 # Mandatory package you have to install for dashboard creation is "pywedge" python package :-
 - !pip install pywedge
+
+- After installing pywedge run bellow code for auto dashboard creation :
+>>> import pywedge as pw
+>>> x = pw.Pywedge_Charts(df_weather,c=None,y="Humidity")
+>>> charts = x.make_charts()
